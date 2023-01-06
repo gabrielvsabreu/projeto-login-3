@@ -55,12 +55,32 @@ main {
 /* Formulário */
 
 h1 {
+    color: #054159;
     font-weight: 300;
     text-transform: uppercase;
 }
 
+.fa-angle-left {
+    display: block;
+    color: #054159;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 1.5em;
+    transform: translateY(-40px);
+    cursor: pointer; 
+}
+
+.fa-angle-left:hover {
+    background-color: #054159;
+    color: #FFFDF1;
+    transition: .3s;
+}
+
 form {
-    margin: 40px;
+    margin: 10px 30px 20px 30px;
 }
 
 label, input {
@@ -70,6 +90,7 @@ label, input {
 }
 
 input {
+    color: #323232;
     padding: 10px;
     font-size: 1em;
     margin-bottom: 20px;
@@ -129,8 +150,12 @@ input[type="submit"]:hover {
     background-color: #0077B5;
 }
 
+.fa-google {
+    background-color:	#c71610;
+}
+
 /* Registrar */
 
 .register-container, .register-container > p{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
