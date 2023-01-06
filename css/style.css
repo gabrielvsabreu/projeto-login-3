@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #323232;
+    border: none;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+body {
+    background-image: url(../img/fundo.jpg);
+    background-size: cover;    
+}
+
+a, label {
+    font-size: 0.8em;
+}
+
+a:hover {
+    color: #054159;
+}
+
+a:focus {
+    outline: lightgray;
+}
+
+/* main */
+
+main {
+    background-color: #FFFDF1;
+    margin: auto;
+    width: 400px;
+    padding: 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulário */
+
+h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+form {
+    margin: 40px;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+    background-color: transparent;
+}
+
+input:focus {
+    border-bottom: 1px solid #054159;
+}
+
+form > a {
+    display: block;
+    text-align: right;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #054159;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 20px;
+    color: #054159;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #054159;
+    color: white;
+    transition: .3s;
+}
+
+/* Redes socias */
+
+.social-container, .social-container > p, .social-container > i{
+    margin-bottom: 20px;
+}
+
+.social-container > i{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    color: #FFFDF1;
+    cursor: pointer;
+    margin: 0px 10px 10px 0px;
+}
+
+.fa-facebook-f {
+    background-color: #3B5998;
+}
+
+.fa-linkedin-in {
+    background-color: #0077B5;
+}
+
+/* Registrar */
+
+.register-container, .register-container > p{
+    margin-bottom: 5px;
+}
