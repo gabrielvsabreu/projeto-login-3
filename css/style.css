@@ -10,6 +10,7 @@
     font-family: 'Poppins', sans-serif;
     color: #323232;
     border: none;
+    overflow: hidden;
 }
 
 textarea:focus, input:focus {
@@ -18,7 +19,11 @@ textarea:focus, input:focus {
 
 body {
     background-image: url(../img/fundo.jpg);
-    background-size: cover;    
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
 }
 
 a, label {
@@ -36,14 +41,15 @@ a:focus {
 /* main */
 
 main {
+    position: relative;
     background-color: #FFFDF1;
     margin: auto;
-    width: 400px;
-    padding: 30px;
+    width: 350px;
+    padding: 10px;
     margin-top: 10vh;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Formulário */
@@ -85,9 +91,9 @@ input[type="submit"] {
     text-transform: uppercase;
     font-weight: bold;
     border: 1px solid #054159;
-    height: 40px;
+    height: 50px;
     background-color: transparent;
-    border-radius: 20px;
+    border-radius: 50px;
     color: #054159;
     margin-top: 30px;
     cursor: pointer;

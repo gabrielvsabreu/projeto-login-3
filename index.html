@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/blue.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Login</title>
 </head>
 <body>
     <main>
         <div class="login-container">
             <h1>Login</h1>
-            <form action="">
+            <form action="login.php" method="post" autocomplete="on">
                 <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="on" required>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail." autocomplete="email" required maxlength="30">
                 <label for="password">Senha</label>
-                <input type="password" name="password" id="password" placeholder="Digite sua senha" autocomplete="off" required>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha." autocomplete="current-password" required maxlength="20">
                 <input type="submit" value="Entrar">
                 <a href="#">Esqueceu a senha?</a>
             </form>
@@ -25,7 +25,7 @@
         </div>
 
         <div class="social-container">
-            <p>Entre com suas redes sociais</p>
+            <p>Entre com suas redes sociais:</p>
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-linkedin-in"></i>
         </div>
